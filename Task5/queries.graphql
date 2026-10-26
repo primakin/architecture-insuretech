@@ -1,0 +1,33 @@
+# Информация о клиенте
+query { 
+  client(id: "...") { 
+    id 
+    name 
+    age 
+  } 
+}
+
+# Информация о документах клиента
+query { 
+  client(id: "...") { 
+    documents { 
+      id 
+      type 
+      number 
+      issueDate 
+      expiryDate 
+    } 
+  } 
+}
+
+# Информация о родственниках клиента
+query { 
+  client(id: "...") { 
+    relatives { 
+      id 
+      relationType 
+      name 
+      age 
+    } 
+  } 
+}
